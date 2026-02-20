@@ -34,3 +34,32 @@ resultados.
 Escreva um algoritmo que leia as informações necessárias e imprima os dois
 indicadores calculados. A saída deve deixar claro qual valor corresponde a cada
 medida do relatório.
+
+Desafio.
+Essa questão NÃO entra no critério de entrega e NÃO é obrigatória sua resolução.
+O propósito é trazer uma questão difícil para aqueles que aceitarem o desafio.
+4. Em um banco digital, as contas-correntes de um certo sistema são identificadas
+por um número com exatamente três dígitos. Para reduzir erros de digitação, o
+sistema calcula automaticamente um dígito verificador a partir desse número
+e o utiliza para validar a conta informada.
+Sua tarefa é implementar um algoritmo do cálculo desse dígito verificador. O
+programa deve ler o número da conta (considere que sempre serão digitados 3
+dígitos) e imprimir apenas o dígito verificador correspondente, seguindo o
+procedimento usado pelo banco:
+● Forme o inverso do número da conta.
+● Some o número original com o seu inverso.
+● Pegue o resultado da soma e, considerando seus dígitos da esquerda para a
+direita, multiplique:
+○ o 1º dígito por 1,
+○ o 2º dígito por 2,
+○ o 3º dígito por 3,
+○ (se o resultado tiver 4 dígitos, continue: 4º dígito por 4),
+○ e some todos esses produtos.
+O último dígito dessa soma final é o dígito verificador.
+Use o exemplo abaixo como referência para conferir se seu programa está
+seguindo o mesmo padrão do sistema:
+● Número da conta: 235
+● Inverso: 532
+● Soma: 235 + 532 = 767
+● Cálculo posicional: 7×1 + 6×2 + 7×3 = 40
+● Dígito verificador: 0
